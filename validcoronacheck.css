@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root {
+    --fs-xl: clamp(2.5rem, 2vw + 2.5rem, 5rem);
+    --fs-head: clamp(2rem, 2rem + 1vw, 5rem);
+    --fs-subhead: clamp(1rem, 1rem + .75vw, 3rem);
+    --fs-basic: 1.3rem;
+    font-size: 70%;
+  }
+  .xl{
+    font-size: var(--fs-xl);
+    font-style: bold;
+    font-family: "Montserrat";
+    line-height: 2rem;
+  }
+  .head{
+    font-size: var(--fs-head);
+    display: inline-block;
+
+  }
+  .subhead{
+    font-size: var(--fs-subhead);
+    display: inline-block;
+  }
+  .basic{
+    font-size: var(--fs-basic);
+    font-family: "Montserrat";
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: clamp(1rem, 2vw, 24px);
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .center{
+    margin-left:auto;margin-right:auto;
+    display:flex;
+    justify-content:center;align-items:center;
+    margin: 10rem 0;
+    text-align: center;
+  }
+  .card {
+    padding: 3rem 1rem;
+    background-color: white;
+    /* width: clamp(80px, 80px+2vw, 250px);
+    height: clamp(80px, 80px+2vw, 250px); */
+    border-radius: 10px;
+    border: #000;
+    border-style: solid;
+    border-width: 4px;
+    text-align: center; /* align horizontal */
+    display:flex;justify-content:center;align-items:center;
+    
+  }
+  .bluebutton{
+    padding: 3rem 1rem;
+    text-align: center; /* align horizontal */
+    display:flex;justify-content:center;align-items:center;
+    background-color: blue;
+    color:white;
+    border-radius: 30px;
+  }
+  .bluebutton a{
+    color:white;
+  }
+  .cardheader {
+    text-align: left; /* align horizontal */
+    display:flex;align-items:center;
+    
+  }
+  body {
+    font-family: "Montserrat";
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #57ffc7;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  .checkmark{
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cpolygon style='fill:%23000000;' points='202.624,478.016 0,291.36 70.512,214.8 191.968,326.656 431.44,33.984 512,99.904 '/%3E%3C/svg%3E%0A");
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 120px 20px;
+    margin: 6rem 0px;
+    line-height: 200%;
+    display:flex;justify-content:center;align-items:center;
+  }
+
+  .footer{
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: 6rem;
+    padding-bottom: 10rem;
+  }
+
+  a{
+    text-decoration: none;
+  }
